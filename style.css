@@ -1,6 +1,6 @@
 
 body {
-  font-family: "sans-serif", Inter;
+  font-family: "sans-serif", Inter, "sans-serif", Helvetica, "sans-serif", Arial;
   margin: 0;
   display: flex;
   justify-content:center;
