@@ -113,7 +113,8 @@ h1 {
   max-width: 800px;
   padding: 16px;
   border-radius: 22px;
-  border: 1px solid rgba(40,40,47,.3);
+  border: 1px solid rgba(40,40,47,.16);
+  background: rgba(40,40,47,.008);
   margin-top: 40px;
 }
 
