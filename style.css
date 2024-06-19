@@ -166,6 +166,11 @@ h1 {
   margin-top: 40px;
 }
 
+.about-me-section a:hover {
+  opacity: 0.82;
+  background: black;
+}
+
 img {
   width: 100%;
   float: left;
