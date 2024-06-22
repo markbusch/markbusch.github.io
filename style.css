@@ -7,7 +7,7 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    letter-spacing: -.025em;
+    letter-spacing: -.015em;
 }
 
 p {
@@ -107,6 +107,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   margin-top: 0px;
+  flex-wrap: nowrap;
 }
 
 .image-wrapper {
@@ -124,13 +125,13 @@ h1 {
 
 
 .image-grid-text h4 {
-  color: rgb(15,15,19);
-  font-weight: 500;
+  color: rgb(25,28,32);
+  font-weight:500;
   margin: 0;
-  font-size: 16px;
+  font-size: 14px;
   padding: 0;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: baseline;
 }
 
 .image-grid-text {
@@ -146,7 +147,7 @@ h1 {
   font-size: 14px;
   margin: 0;
   font-weight: 400;
-  margin-left: 8px;
+  margin-left: 12px;
   width: 60%;
   color: rgb(75,76,85);
 }
@@ -228,6 +229,12 @@ footer p {
 
 .about-me-section p{
   margin-top: 60px;
+  margin-left: 0;
+}
+
+.image-grid-text h4 {
+
+  vertical-align: top;
 }
 
 .about-me-section img{
@@ -237,7 +244,7 @@ footer p {
 }
 
 
-@media (max-width: 420px) {
+@media (max-width: 485px) {
   h1 {
     font-size: 28px;
     margin-top: 120px;
