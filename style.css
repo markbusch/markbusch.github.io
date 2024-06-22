@@ -12,7 +12,7 @@ h1,h2,h3,h4,h5,h6 {
 
 p {
   margin: 0;
-  letter-spacing: -.005em;
+  letter-spacing: -.010em;
 }
 
 
@@ -44,15 +44,15 @@ box-sizing: border-box;
 }
 
 nav h3 {
-  font-family: "sans-serif", Helvetica;
+  font-family: "Helvetica", sans-serif;
   font-size: 18px;
-  font-weight: 500;
-  letter-spacing: -.015em;
+  font-weight: 400;
+  letter-spacing: -.008em;
 }
 
 a {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
   border: 1px solid rgba(0,0,8,.2);
   border-radius: 80px;
@@ -84,22 +84,34 @@ a:nth-child(2):hover {
 
 
 h1 {
+  font-family: "Helvetica", sans-serif;
+  font-size: 30px;
   margin-top: 240px;
-  font-weight: 600;
+  font-weight: 500;
+  color: rgb(30,34,43);
+  letter-spacing: -.025rem;
+  line-height: 1.4;
 }
 
 .intro-paragraph {
   font-weight: 400;
-  color: rgb(55,55,61);
+  color: rgb(35,35,41);
   margin-top: 0px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .subheading {
-  margin-top: 60px;
+  margin-top: 80px;
   font-weight: 500;
-  letter-spacing: .09em;
-  opacity: .6;
+  letter-spacing: 0.06em;
+  opacity: .5;
+  text-align: center;
+  margin-bottom: 8px;
+  color: rgba(0,7,20)
+}
+
+.subheading:nth-of-type(2) {
+  margin-top: 120px;
 }
 
 #image-grid {
@@ -115,8 +127,8 @@ h1 {
   padding: 16px;
   border-radius: 22px;
   border: 1px solid rgba(40,40,47,.12);
-  background: rgba(40,40,47,.017);
-  margin-top: 40px;
+  background: rgba(40,42,62,.015);
+  margin-top: 20px;
 }
 
 .image-wrapper img{
@@ -125,13 +137,14 @@ h1 {
 
 
 .image-grid-text h4 {
-  color: rgb(25,28,32);
-  font-weight:500;
+  color: rgb(25,28,39);
+  font-weight:400;
   margin: 0;
   font-size: 14px;
-  padding: 0;
+  line-height: 1.5;
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: top;
+
 }
 
 .image-grid-text {
@@ -146,15 +159,19 @@ h1 {
   display: inline-block;
   font-size: 14px;
   margin: 0;
-  font-weight: 400;
-  margin-left: 12px;
+  font-weight: 300;
+  margin-left: 8px;
   width: 60%;
-  color: rgb(75,76,85);
+  line-height: 1.5;
+
+  color: rgb(75,78,83);
+    vertical-align: top;
+
 }
 
 .about-me-section {
   display: flex;
-  margin-top: 160px;
+  margin-top: 40px;
   justify-content: center;
 }
 
@@ -167,7 +184,7 @@ h1 {
 
 .about-me-text{
   max-width: 400px;
-  margin-top: -6px;
+  margin-top: -4px;
   line-height: 160%;
   font-weight: 400;
     color: rgb(75,76,85);
@@ -198,15 +215,15 @@ img {
 
 
 footer {
-  border-top: 1px solid rgba(1,2,5,.15);
+  border-top: 1px solid rgba(1,10,12,.15);
   margin-top: 120px;
-padding: 30px 0 20px 0;
+padding: 24px 0 20px 0;
 }
 
 
 footer p {
   font-size: 10px;
-  opacity: 0.5;
+  color: rgba(1,10,12,.4);
 }
 
 @media (max-width: 1220px) {
@@ -224,7 +241,7 @@ footer p {
   .about-me-section {
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 40px;
 }
 
 .about-me-section p{
@@ -246,7 +263,7 @@ footer p {
 
 @media (max-width: 485px) {
   h1 {
-    font-size: 28px;
+    font-size: 26px;
     margin-top: 120px;
   }
 
@@ -254,7 +271,7 @@ footer p {
     display: block;
     width: 100%;
     margin-left: 0;
-    margin-top: 8px;
+    margin-top: 4px;
   }
 
 }
