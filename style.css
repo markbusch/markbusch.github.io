@@ -12,7 +12,7 @@ h1,h2,h3,h4,h5,h6 {
 
 p {
   margin: 0;
-  letter-spacing: -.01em;
+  letter-spacing: -.005em;
 }
 
 
@@ -113,10 +113,15 @@ h1 {
   max-width: 800px;
   padding: 16px;
   border-radius: 22px;
-  border: 1px solid rgba(40,40,47,.16);
+  border: 1px solid rgba(40,40,47,.12);
   background: rgba(40,40,47,.017);
   margin-top: 40px;
 }
+
+.image-wrapper img{
+  border: 1px solid rgba(40,40,47,.08);
+}
+
 
 .image-grid-text h4 {
   color: rgb(15,15,19);
@@ -140,9 +145,10 @@ h1 {
   display: inline-block;
   font-size: 14px;
   margin: 0;
-  margin-left: 10px;
+  font-weight: 400;
+  margin-left: 8px;
   width: 60%;
-  color: rgb(35,35,39);
+  color: rgb(75,76,85);
 }
 
 .about-me-section {
@@ -154,12 +160,22 @@ h1 {
 .about-me-section img{
   max-width: 400px;
   margin-right: 20px;
+  margin-bottom: 10px;
 }
 
-.about-me-section p{
+
+.about-me-text{
   max-width: 400px;
-  margin-top: -4px;
-  line-height: 150%;
+  margin-top: -6px;
+  line-height: 160%;
+  font-weight: 400;
+    color: rgb(75,76,85);
+    font-size: 16px;
+}
+
+.photo-credit {
+      color: rgba(75,76,85,.7);
+  font-size: 11px;
 }
 
 .about-me-section a {
@@ -211,7 +227,7 @@ footer p {
 }
 
 .about-me-section p{
-  margin-top: 14px;
+  margin-top: 60px;
 }
 
 .about-me-section img{
