@@ -85,13 +85,16 @@ a:nth-child(2):hover {
 
 h1 {
   font-family: "Helvetica", sans-serif;
-  font-size: 30px;
-  margin-top: 240px;
+  font-size: 32px;
+  margin-top: 220px;
   font-weight: 500;
   color: rgb(30,34,43);
-  letter-spacing: -.025rem;
+  letter-spacing: -.04rem;
   line-height: 1.4;
 }
+
+
+
 
 .intro-paragraph {
   font-weight: 400;
@@ -103,11 +106,12 @@ h1 {
 .subheading {
   margin-top: 80px;
   font-weight: 500;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   opacity: .5;
   text-align: center;
   margin-bottom: 8px;
-  color: rgba(0,7,20)
+  color: rgba(0,7,20);
+  font-size: 12px;
 }
 
 .subheading:nth-of-type(2) {
@@ -138,7 +142,7 @@ h1 {
 
 .image-grid-text h4 {
   color: rgb(25,28,39);
-  font-weight:400;
+  font-weight:500;
   margin: 0;
   font-size: 14px;
   line-height: 1.5;
@@ -159,7 +163,7 @@ h1 {
   display: inline-block;
   font-size: 14px;
   margin: 0;
-  font-weight: 300;
+  font-weight: 400;
   margin-left: 8px;
   width: 60%;
   line-height: 1.5;
@@ -263,8 +267,9 @@ footer p {
 
 @media (max-width: 485px) {
   h1 {
-    font-size: 26px;
+    font-size: 28px;
     margin-top: 120px;
+
   }
 
   .image-grid-text p{
