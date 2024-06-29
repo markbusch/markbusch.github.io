@@ -13,6 +13,7 @@ h1,h2,h3,h4,h5,h6 {
 p {
   margin: 0;
   letter-spacing: -.010em;
+  color: rgb(80,82,92);
 }
 
 
@@ -22,14 +23,14 @@ display: flex;
 justify-content:center;
 flex-direction: column;
 width: 1200px;
-padding: 0 20px;
+padding: 0 16px;
 }
 
 nav {
 display: flex;
 justify-content: space-between;
 align-items: center;
-border-bottom: 1px solid rgba(1,2,5,.15);
+border-bottom: 1px solid rgba(20,27,36,.13);
 position: fixed;
 z-index: 100;
 background: white;
@@ -37,7 +38,7 @@ max-width: 1200px;
 width: 100%;
 top: 0;
 left: 50%;
-padding: 8px 0px;
+min-height: 54px;
 transform: translateX(-50%);
 box-sizing: border-box;
 
@@ -98,16 +99,15 @@ h1 {
 
 .intro-paragraph {
   font-weight: 400;
-  color: rgb(35,35,41);
   margin-top: 0px;
   font-size: 18px;
 }
 
 .subheading {
-  margin-top: 80px;
+  margin-top: 60px;
   font-weight: 500;
   letter-spacing: 0.08em;
-  opacity: .5;
+  opacity: .3;
   text-align: center;
   margin-bottom: 8px;
   color: rgba(0,7,20);
@@ -137,6 +137,7 @@ h1 {
 
 .image-wrapper img{
   border: 1px solid rgba(40,40,47,.08);
+  box-sizing: border-box;
 }
 
 
@@ -164,7 +165,7 @@ h1 {
   font-size: 14px;
   margin: 0;
   font-weight: 400;
-  margin-left: 8px;
+  margin-left: 6px;
   width: 60%;
   line-height: 1.5;
 
@@ -191,7 +192,6 @@ h1 {
   margin-top: -4px;
   line-height: 160%;
   font-weight: 400;
-    color: rgb(75,76,85);
     font-size: 16px;
 }
 
@@ -230,16 +230,22 @@ footer p {
   color: rgba(1,10,12,.4);
 }
 
+
+/*TABLET*/
 @media (max-width: 1220px) {
 
   h1 {
     margin-top: 160px;
   }
   nav {
-    padding: 0 20px;
+    padding: 0 16px;
   }
   a {
     font-size: 12px;
+  }
+
+  nav h3 {
+    font-size: 16px;
   }
 
   .about-me-section {
@@ -264,12 +270,12 @@ footer p {
 
 }
 
-
+/*PHONE*/
 @media (max-width: 485px) {
   h1 {
     font-size: 28px;
     margin-top: 120px;
-
+    padding: 0 30px;
   }
 
   .image-grid-text p{
@@ -278,5 +284,33 @@ footer p {
     margin-left: 0;
     margin-top: 4px;
   }
+
+  .image-grid-text {
+    padding-left: 4px;
+    padding-right: 4px;
+    box-sizing: border-box;
+
+    margin-bottom: 12px;
+    margin-top: 20px;
+  }
+
+  .image-wrapper {
+    max-width: 800px;
+    padding: 6px;
+    border-radius: 12px;
+    border: 1px solid rgba(40,40,47,.12);
+    background: rgba(40,42,62,.015);
+    margin-top: 20px;
+  }
+
+  nav h3 {
+    font-size: 14px;
+  }
+
+  nav {
+    padding-right: 4px;
+  }
+
+
 
 }
