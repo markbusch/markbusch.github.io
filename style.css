@@ -38,7 +38,7 @@ max-width: 1200px;
 width: 100%;
 top: 0;
 left: 50%;
-min-height: 54px;
+padding: 8px 0;
 transform: translateX(-50%);
 box-sizing: border-box;
 
@@ -55,32 +55,41 @@ a {
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
-  border: 1px solid rgba(0,0,8,.2);
   border-radius: 80px;
-  padding: 10px 18px;
   float: left;
-  margin-left: 4px;
   color: black;
   transition: all ease-out .115s;
   cursor: pointer;
 }
 
+.links a:nth-child(2), .links a:nth-child(3) {
+  padding: 0;
+  margin-left: 12px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+a img {
+  width: 28px;
+  float: left;
+}
+
 .links a:nth-child(1) {
   background: black;
   color: white;
+  margin-right: 0px;
+    padding: 12px 16px;
 }
 
 a:hover {
-  transform: scale(98%);
+  transform: scale(97%);
+  opacity: 0.8;
 }
 
-a:nth-child(1):hover {
-  opacity: 0.82;
-}
 
-a:nth-child(2):hover {
-  background-color: rgba(0,0,5,.045);
-}
 
 
 
@@ -211,7 +220,7 @@ h1 {
   background: black;
 }
 
-img {
+#image-grid img {
   width: 100%;
   float: left;
   border-radius: 6px;
@@ -246,6 +255,10 @@ footer p {
 
   nav h3 {
     font-size: 16px;
+  }
+
+  nav {
+    padding: 8px 20px;
   }
 
   .about-me-section {
@@ -304,13 +317,16 @@ footer p {
   }
 
   nav h3 {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   nav {
-    padding-right: 4px;
+    padding: 4px 16px;
   }
-
-
+  .links a:nth-child(1) {
+    background: black;
+    color: white;
+    margin-right: 2px;
+  }
 
 }
