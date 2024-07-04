@@ -58,13 +58,18 @@ a {
   border-radius: 80px;
   float: left;
   color: black;
-  transition: all ease-out .115s;
+  transition: all ease-out .155s;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
-.links a:nth-child(2), .links a:nth-child(3) {
+.links a:nth-child(2), .links a:nth-child(3){
   padding: 0;
   margin-left: 12px;
+  font-size: 10px;
+  color: rgb(0,10,30,.55);
+  font-weight: 400;
 }
 
 .links {
@@ -75,6 +80,7 @@ a {
 a img {
   width: 28px;
   float: left;
+  margin-right: 3px;
 }
 
 .links a:nth-child(1) {
@@ -85,10 +91,9 @@ a img {
 }
 
 a:hover {
-  transform: scale(97%);
-  opacity: 0.8;
+  transform: scale(97.5%);
+  opacity: 0.75;
 }
-
 
 
 
@@ -327,6 +332,10 @@ footer p {
     background: black;
     color: white;
     margin-right: 2px;
+  }
+
+  .links span {
+    display: none;
   }
 
 }
