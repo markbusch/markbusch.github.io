@@ -19,10 +19,12 @@ p {
 
 #container {
 display: flex;
-justify-content:center;
 flex-direction: column;
+align-items: center;
 max-width: 1200px;
 padding: 0 16px;
+
+
 }
 
 nav {
@@ -125,16 +127,37 @@ h1 span{
   margin-top: 60px;
   font-weight: 500;
   letter-spacing: 0.08em;
-  opacity: .3;
   text-align: center;
   margin-bottom: 8px;
-  color: rgba(0,7,20);
-  font-size: 12px;
+  color: rgba(5,10,40,.6);
+  font-size: 11px;
+  padding: 8px 18px;
+  background: rgba(5,10,45,.04);
+  border-radius: 100px;
+  display: inline-block;
+
 }
 
 .subheading:nth-of-type(2) {
   margin-top: 120px;
 }
+
+.intro-text {
+  animation: animatein .35s ease-out;
+}
+
+@keyframes animatein {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+      transform: translateY( 0px);
+  }
+}
+
+
 
 #image-grid {
   display: flex;
@@ -143,6 +166,18 @@ h1 span{
   margin-top: 0px;
   flex-wrap: nowrap;
   width: 100%;
+  animation: animateinslow .5s ease-out;
+}
+
+@keyframes animateinslow {
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  to {
+    opacity: 1;
+      transform: translateY( 0px);
+  }
 }
 
 .image-wrapper {
@@ -151,7 +186,7 @@ h1 span{
   border-radius: 22px;
   border: 1px solid rgba(40,40,47,.12);
   background: rgba(40,42,62,.015);
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 .image-wrapper img{
@@ -236,16 +271,21 @@ h1 span{
 }
 
 
+
 footer {
-  border-top: 1px solid rgba(1,10,12,.15);
+  width: 100%;
+  border-top: 1px solid rgba(1,12,22,.1);
   margin-top: 120px;
-padding: 24px 0 20px 0;
+padding: 16px 0 20px 0;
+text-align: left;
 }
 
 
 footer p {
-  font-size: 10px;
-  color: rgba(1,10,12,.4);
+  font-size: 8px;
+  color: rgba(1,10,12,.35);
+  font-weight: 500;
+  letter-spacing: normal;
 }
 
 
