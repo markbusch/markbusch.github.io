@@ -394,11 +394,7 @@ footer p {
   nav {
     padding: 4px 16px;
   }
-  .links a:nth-child(1) {
-    background: black;
-    color: white;
-    margin-right: 2px;
-  }
+
 
   .links span {
     display: none;
